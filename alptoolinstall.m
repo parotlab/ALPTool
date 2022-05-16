@@ -47,7 +47,7 @@ while true
     end
         
     % query type of interface
-    [interface, ok] = listdlg('ListString', {'V1 32bit', 'V4 32bit', 'V4 64bit'}, ...
+    [interface, ok] = listdlg('ListString', {'V1 32bit', 'V4.2 32bit', 'V4.2 64bit', 'V4.3 64bit'}, ...
         'SelectionMode', 'single', ...
         'Name', 'Please choose API type...', ...
         'PromptString', 'Available ALP API classes:');
@@ -75,6 +75,11 @@ while true
             classname = 'alpV42x64';
             protofile = 'alpV42x64proto.m';
             protofunc = @alpV42x64proto;
+            arch = 'win64';
+        case 4
+            classname = 'alpV43x64';
+            protofile = 'alpV43x64proto.m';
+            protofunc = @alpV43x64proto;
             arch = 'win64';
     end
     clear interface;

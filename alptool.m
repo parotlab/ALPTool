@@ -111,7 +111,7 @@ function varargout = alptool_OutputFcn(hObject, eventdata, handles)
     if isfield(handles, 'output')
         varargout{1} = handles.output;
     else
-        arargout{1} = [];
+        varargout{1} = [];
     end
 
     

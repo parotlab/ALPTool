@@ -12,10 +12,10 @@
 %
 
 %% ALP tool installation
-%alptoolinstall
+alptoolinstall
 
 %% interactively select and load api, then use it in alptool
-%alptool();
+alptool();
     
 %% load specific DLL in pseudomode and use it in two instances of alptool
 %tagname = 'tagname';
